@@ -6,6 +6,11 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5371D6A9304CF26F007F429B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5371D6A8304CF26F007F429B /* README.md */; };
+		5371D6AB304CF282007F429B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5371D6AA304CF282007F429B /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5371D67A304CEBD8007F429B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,8 @@
 		5371D66C304CEBD6007F429B /* DORC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DORC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5371D679304CEBD8007F429B /* DORCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DORCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5371D683304CEBD8007F429B /* DORCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DORCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5371D6A8304CF26F007F429B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5371D6AA304CF282007F429B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -73,6 +80,8 @@
 				5371D67C304CEBD8007F429B /* DORCTests */,
 				5371D686304CEBD8007F429B /* DORCUITests */,
 				5371D66D304CEBD6007F429B /* Products */,
+				5371D6A8304CF26F007F429B /* README.md */,
+				5371D6AA304CF282007F429B /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,6 +206,8 @@
 		5371D66A304CEBD6007F429B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				5371D6A9304CF26F007F429B /* README.md in Resources */,
+				5371D6AB304CF282007F429B /* .gitignore in Resources */,
 			);
 		};
 		5371D677304CEBD8007F429B /* Resources */ = {
