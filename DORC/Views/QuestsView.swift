@@ -9,26 +9,25 @@ import SwiftUI
 
 struct QuestsView: View {
     var body: some View {
-        NavigationStack{
-            ZStack{
-                Color.blue.opacity(0.1).ignoresSafeArea()
+        
+        ZStack{
+            Color.blue.opacity(0.1).ignoresSafeArea()
+            
+            ScrollView{
+                VStack(spacing: 10){
+                    Text("ALL QUESTS")
+                        .font(.title)
+                        .fontWeight(.black)
+                }
                 
-                ScrollView{
-                    VStack(spacing: 10){
-                        Text("ALL QUESTS")
-                            .font(.title)
-                            .fontWeight(.black)
-                    }
-                    
-                    QuestCards()
-                }
-            }.toolbar {
-                ToolbarItem(placement: .principal){
-                    Image("dorc-typeface")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 90)
-                }
+                QuestCards()
+            }
+        }.toolbar {
+            ToolbarItem(placement: .principal){
+                Image("dorc-typeface")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 90)
             }
         }
     }

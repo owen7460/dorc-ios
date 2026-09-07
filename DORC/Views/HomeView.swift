@@ -10,25 +10,24 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         
-        NavigationStack{
-            ZStack{
-                Background()
-                
-                ScrollView{
-                    VStack(spacing: 20){
-                        welcomeSection
-                        questContent
-                        QuestCards()
-                    }
-                    .padding(.top,50)
+        ZStack{
+            Background()
+            
+            ScrollView{
+                VStack(spacing: 20){
+                    welcomeSection
+                    questContent
+                    QuestCards()
                 }
-            }.toolbar {
-                ToolbarItem(placement: .principal){Image("dorc-typeface")
-                        .resizable()
-                        .scaledToFit()
-                    .frame(width: 90)}
+                .padding(.top,50)
             }
+        }.toolbar {
+            ToolbarItem(placement: .principal){Image("dorc-typeface")
+                    .resizable()
+                    .scaledToFit()
+                .frame(width: 90)}
         }
+        
     }
     
     private var welcomeSection: some View {
