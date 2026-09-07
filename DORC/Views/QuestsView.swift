@@ -9,7 +9,28 @@ import SwiftUI
 
 struct QuestsView: View {
     var body: some View {
-        Text("Quests Hello")
+        NavigationStack{
+            ZStack{
+                Color.blue.opacity(0.1).ignoresSafeArea()
+                
+                ScrollView{
+                    VStack(spacing: 10){
+                        Text("ALL QUESTS")
+                            .font(.title)
+                            .fontWeight(.heavy)
+                    }
+                    
+                    QuestCards()
+                }
+            }.toolbar {
+                ToolbarItem(placement: .principal){
+                    Image("dorc-typeface")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 90)
+                }
+            }
+        }
     }
 }
 

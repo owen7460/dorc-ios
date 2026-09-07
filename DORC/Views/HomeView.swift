@@ -15,9 +15,10 @@ struct HomeView: View {
                 LinearGradient(colors: [.blue.opacity(0.12),
                                         .purple.opacity(0.18),.white], startPoint: .topLeading, endPoint: .bottomTrailing).ignoresSafeArea(edges: .all)
                 ScrollView{
-                    VStack(spacing: 60){
+                    VStack(spacing: 20){
                         welcomeSection
                         questContent
+                        QuestCards()
                     }
                     .padding(.top,50)
                 }
@@ -48,43 +49,13 @@ struct HomeView: View {
             .shadow(color: .cyan.opacity(0.4), radius: 10, x: 0, y: 10)
         }
         .padding(.top, 36)
-        .padding(.bottom, 80)
+        .padding(.bottom, 100)
     }
     
     private var questContent: some View {
         VStack {
             sectionHeader(title:"Your Pesonal Quests")
             sectionHeader(title:"DORC's Quests")
-                .padding(.bottom, 34)
-            QuestCard(
-                title: "Study French",
-                description: "Practice listening, speaking, reading, writing",
-                xpReward: 30
-            )
-
-            QuestCard(
-                title: "Exercise",
-                description: "Go for a walk, run, or bike ride",
-                xpReward: 20
-            )
-
-            QuestCard(
-                title: "Read a Book",
-                description: "Read a book for 30 minutes",
-                xpReward: 10
-            )
-
-            QuestCard(
-                title: "Drink Water",
-                description: "Drink 8 glasses of water today",
-                xpReward: 10
-            )
-
-            QuestCard(
-                title: "Practice Coding",
-                description: "Spend 30 minutes practicing coding",
-                xpReward: 25
-            )
         }
         .padding(.horizontal, 24)
     }
