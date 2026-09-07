@@ -14,7 +14,7 @@ struct GuildView: View {
                 Color.blue.opacity(0.1).ignoresSafeArea()
                 
                 ScrollView {
-                        Text("ALL QUESTS")
+                        Text("GUILD PAGE")
                             .font(.title)
                             .fontWeight(.heavy)
                         
