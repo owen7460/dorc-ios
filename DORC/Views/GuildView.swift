@@ -9,10 +9,29 @@ import SwiftUI
 
 struct GuildView: View {
     var body: some View {
-        Text("Guild")
+        NavigationStack {
+            ZStack{
+                Color.blue.opacity(0.1).ignoresSafeArea()
+                
+                ScrollView {
+                        Text("ALL QUESTS")
+                            .font(.title)
+                            .fontWeight(.heavy)
+                        
+                    Spacer()
+                }
+            }.toolbar {
+                ToolbarItem(placement: .principal){Image("dorc-typeface")
+                        .resizable()
+                        .scaledToFit()
+                    .frame(width:90)}
+                }
+        }
     }
 }
 
 #Preview {
     GuildView()
 }
+
+
