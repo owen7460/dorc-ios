@@ -27,8 +27,9 @@ struct PersonalInfo: View {
                     .clipShape(Capsule())
             }
             
-            Divider()
-                .overlay(Color(red: 0.0, green: 0.18, blue: 0.32))
+            Capsule()
+                .fill(Color(red: 0.0, green: 0.18, blue: 0.32))
+                .frame(height: 2)
             
             Text("Full Name: Owen Ouyang")
                 .font(.subheadline)
