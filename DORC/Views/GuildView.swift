@@ -16,7 +16,7 @@ struct GuildView: View {
                 ScrollView {
                         Text("GUILD PAGE")
                             .font(.title)
-                            .fontWeight(.heavy)
+                            .fontWeight(.black)
                         
                     Spacer()
                 }

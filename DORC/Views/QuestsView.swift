@@ -17,7 +17,7 @@ struct QuestsView: View {
                     VStack(spacing: 10){
                         Text("ALL QUESTS")
                             .font(.title)
-                            .fontWeight(.heavy)
+                            .fontWeight(.black)
                     }
                     
                     QuestCards()

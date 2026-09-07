@@ -12,8 +12,8 @@ struct HomeView: View {
         
         NavigationStack{
             ZStack{
-                LinearGradient(colors: [.blue.opacity(0.12),
-                                        .purple.opacity(0.18),.white], startPoint: .topLeading, endPoint: .bottomTrailing).ignoresSafeArea(edges: .all)
+                Background()
+                
                 ScrollView{
                     VStack(spacing: 20){
                         welcomeSection

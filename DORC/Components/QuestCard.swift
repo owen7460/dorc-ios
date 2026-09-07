@@ -30,15 +30,20 @@ struct QuestCard: View {
                 .background(.cyan)
                 .foregroundStyle(.white)
                 .clipShape(Capsule())
+                .shadow(color: .cyan.opacity(0.4), radius: 4, x: 0, y: 2)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(20)
-        .background(.white)
+        .background(.regularMaterial)
         .foregroundStyle(.black)
         .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
         .overlay{RoundedRectangle(cornerRadius: 12)
                 .stroke(.cyan, lineWidth: 2)
         }
+//        .glassEffect(
+//            .regular,
+//            in: RoundedRectangle(cornerRadius: 12)
+//        )
     }
 }
 
@@ -48,5 +53,4 @@ struct QuestCard: View {
         description: "Practice listening, speaking, reading, writing",
         xpReward: 30
     )
-    .padding()
 }

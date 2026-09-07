@@ -16,7 +16,7 @@ struct RanksView: View {
                 ScrollView{
                     Text("LEADERBOARD")
                         .font(.title)
-                        .fontWeight(.heavy)
+                        .fontWeight(.black)
                         .padding(.bottom, 20)
                     
                     
@@ -40,10 +40,11 @@ struct RanksView: View {
      name: String,
      level: Int,
      xp: Int) -> some View {
-        
         HStack{
             Text("\(number). \(name) - Level \(level) - \(xp) XP")
-        }.padding(.bottom, 4)
+        }
+        .fontWeight(.regular)
+        .padding(.bottom, 10)
     }
 }
 

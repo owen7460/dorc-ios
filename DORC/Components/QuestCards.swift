@@ -39,7 +39,7 @@ struct QuestCards: View {
                 description: "Spend 30 minutes practicing coding",
                 xpReward: 25
             )
-        }.padding(.horizontal,24)
+        }.padding(.horizontal,20)
     }
 }
 
