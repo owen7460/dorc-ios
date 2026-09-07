@@ -73,8 +73,10 @@ struct HomeView: View {
             }label: {
                 HStack(spacing: 4){
                     Text("View All")
+                        .font(.callout)
+                        .fontWeight(.light)
                     
-                    Image(systemName: "arror.right")
+                    Image(systemName: "chevron.right")
                 }
             }
             .foregroundStyle(.primary)
